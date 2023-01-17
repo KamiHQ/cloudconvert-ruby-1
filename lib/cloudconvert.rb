@@ -30,9 +30,12 @@ require "cloudconvert/user"
 require "cloudconvert/version"
 require "cloudconvert/webhook"
 require "cloudconvert/webhook/processor"
+require "cloudconvert/signed_url"
 
 module CloudConvert
   API_URL = "https://api.cloudconvert.com".freeze
   SANDBOX_URL = "https://api.sandbox.cloudconvert.com".freeze
+  API_SYNC_URL = "https://sync.api.cloudconvert.com".freeze
+  SANDBOX_SYNC_URL = "https://sync.api.sandbox.cloudconvert.com".freeze
   USER_AGENT = "CloudConvertRubyGem/#{CloudConvert::VERSION}".freeze
 end
